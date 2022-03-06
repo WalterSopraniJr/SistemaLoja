@@ -1,1 +1,13 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
 
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+clock {
+    font-size: 1.5em;
+    text-align: center;
+}

@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript">
+        jQuery(window).load(function ($) {
+            clock();
+        });
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
     
+    <link rel="stylesheet" href="style.css"
+
+    <title>Loja</title>
+</head>
+
+<body>
+    <header>
+        <h1>Loja</h1>
+        <section id="clock">
+            <div>
+            <output id="data"></output>
+        </div>
+        <div>
+            <output id="hour"></output>
+        </div>
+        </section>
+    </header>
+    <section>
+
+    </section>
+    <script>
+        function clock() {
+            var now = new Date();
+
+            var vhour = now.getHours();
+            var vminutes = now.getMinutes();
+            var vseconds = now.getSeconds();
+
+            var vday = now.getDate();
+            var vmonth = now.getMonth() + 1;
+            var vyear = now.getFullYear();
+
+            if (vday < 10) { vday = "0" + vday; }
+            if (vmonth < 10) { vmonth = "0" + vmonth; }
+            if (vhour < 10) { vhour = "0" + vhour; }
+            if (vminutes
+                < 10) {
+                    vminutes
+                    = "0" + vminutes;
+            }
+            if (vseconds < 10) { vseconds = "0" + vseconds; }
+
+            dataFormat = vday + " / " + vmonth + " / " + vyear;
+            hourFormat = vhour + " : " + vminutes + " : " + vseconds;
+
+            document.getElementById("data").innerHTML = dataFormat;
+            document.getElementById("hour").innerHTML = hourFormat;
+
+            setTimeout("clockß()", 1000);
+        }
+    </script>
+
+
 </body>
+
 </html>
