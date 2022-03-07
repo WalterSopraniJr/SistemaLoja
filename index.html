@@ -19,10 +19,13 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
     <link rel="functions" href="produtos.js">
-    <link rel="functions" href="quantidadeProduto.js"
+    <link rel="functions" href="quantidadeProduto.js">
+
+    <title> Natural do Brasil </title>
 </head>
+
 <body>
     <header>
         <h1> Natural do Brasil </h1>
@@ -37,40 +40,38 @@
     </header>
     <section class="order">
         <form>
-            <label> Código de produto </label>
-            <div>
-                <select name="select">
-                    <option value="1"> 1</option>
-                    <option value="2"> 2</option>
-                    <option value="3"> 3</option>
-                    <option value="4"> 4</option>
-                    <option value="5"> 5</option>
-                    <option value="6"> 6</option>
-                    <option value="7"> 7</option>
-                    <option value="8"> 8</option>
-                    <option value="9"> 9</option>
-                    <option value="10"> 10</option>
-                    <option value="11"> 11</option>
-                    <option value="12"> 12</option>
-                  </select>
+            <div id="code">
+                <label> Código de produto </label>
+                <div><select name="select">
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                        <option value="6"> 6</option>
+                        <option value="7"> 7</option>
+                        <option value="8"> 8</option>
+                        <option value="9"> 9</option>
+                        <option value="10"> 10</option>
+                        <option value="11"> 11</option>
+                        <option value="12"> 12</option>
+                    </select></div>
             </div>
-            <br>
-            <label> Nome do produto </label>
-            <div id="search">
-                <input type="text" id="productSearch" placeholder="Buscar..." />
+            <div id="name">
+                <label> Nome do produto </label>
+                <div><input type="text" id="productSearch" placeholder="Buscar..." /></div>
             </div>
-            <br>
-            <label>Quantidade </label>
-            <div>
-                <button id="menos" type="button">-</button>
-
-                <input type="text" id="contador" class="form-control" value="1" min="1" />
-                          
-                <button id="mas" type="button">+</button>
+            <div id="amount">
+                <label>Quantidade </label>
+                <div><button id="menos" type="button">-</button>
+                    <input type="text" id="counter" class="form-control" value="1" min="1" />
+                    <button id="mas" type="button">+</button>
+                </div>
             </div>
-    
         </form>
-        
+        <div id="inferiorCorner">
+            <button id="finish"><a>Finalizar pedido</a></button>
+        </div>
     </section>
     <script>
         function clock() {

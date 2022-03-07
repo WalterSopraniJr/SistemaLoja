@@ -21,26 +21,86 @@ body {
     background-color: #F1F1F1;
 }
 header {
-    display: flexbox;
+    display: flex;
 }
 
 h1 {
     font-size: 3em;
-    text-align: center;
+    display: 80%;
+    margin: 1.5em;
+    margin-left: 2em;
+    margin-right: 5em;
+    color: #2D6025;
 }
 
 #clock {
-    font-size: 1.5em;
-    text-align: center;
-    display: block;
+    font-size: 2em;
+    display: 20%;
+    margin: 1.5em;
 }
 
+
 form {
-    display: flexbox;
+    display: flex;
+}
+
+.order {
+    display: flex;
+}
+
+#code, #name, #amount {
+    display: inline-block;
+    padding: 4em;
+    
 }
 
 label {
-    font-size: 1em;
-    padding: 0.5em;
+    font-size: 2em;
+    color: #094D8A;
+    display: inline-block;
+}
 
+option {
+    font-size: 1em;
+    color: #094D8A;
+    border: 2px solid #094D8A;
+    border-radius: 10px;
+}
+
+select {
+    background-color: #094D8A;
+    color: #F1F1F1;
+    width: 4em;
+    height: 2em;
+    margin-left: 3em;
+    border: 2px solid #094D8A;
+    border-radius: 10px;
+}
+
+input {
+    background-color: #094D8A;
+    color: #F1F1F1;
+    height: 2em;
+    border: 2px solid #094D8A;
+    border-radius: 10px;
+}
+
+#counter {
+    width: 4em;
+}
+
+#inferiorCorner {
+    position: absolute;
+    right: 2em;
+    bottom: 2em;
+}
+
+#finish {
+    background-color: #FCA506;
+    color: #F1F1F1;
+    border: 2px solid #FCA506;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2em;
+    padding: 0.5em;
 }
