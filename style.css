@@ -1,5 +1,24 @@
+/* 
+Style Guide
+
+## Collor Palette ##
+
+Warm red: #DC3E19
+Warm orange: #F77004
+Warm yellow: #FCA506
+Sober green: #2D6025
+Navy blue: #094D8A
+
+Based in Sol Poente by Tarsila do Amaral
+
+## Font ##
+Family: Poppins
+
+*/
+
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #F1F1F1;
 }
 header {
     display: flexbox;
@@ -10,7 +29,18 @@ h1 {
     text-align: center;
 }
 
-clock {
+#clock {
     font-size: 1.5em;
     text-align: center;
+    display: block;
+}
+
+form {
+    display: flexbox;
+}
+
+label {
+    font-size: 1em;
+    padding: 0.5em;
+
 }
