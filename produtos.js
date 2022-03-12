@@ -89,6 +89,18 @@ const produto = [
         precoCompra: 8.00,
         precoVenda: 15.50,
         estoque: 0
+    }, {
+        nome: "Castanha do Pará 200gr",
+        codigo: "0016",
+        precoCompra: 9.00,
+        precoVenda: 16.50,
+        estoque: 0
+    }, {
+        nome: "Castanha do Pará 500gr",
+        codigo: "0017",
+        precoCompra: 23.00,
+        precoVenda: 36.00,
+        estoque: 0
     }
 ] 
 
