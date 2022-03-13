@@ -1,8 +1,6 @@
 const produto = require('./produtos')
-//const google = require('./funcoes')
 const carrinhoCompra = []
-const vendaDiaria = []
-const vendaMensal = []
+
 
 function addProdutoNome() {
     
@@ -10,7 +8,6 @@ function addProdutoNome() {
 
     return carrinhoCompra
 }
-
 
 
 function customerInvoice(array, invoice) {
@@ -21,21 +18,38 @@ function customerInvoice(array, invoice) {
 
         console.log(`Item atual no looping: ${array[i].nome}.`)
 
-        if (array[i].nome == invoice) {
+        if (array[i].nome == invoice[0].nome) {
             console.log(`Match: ${array[i].nome}.`)
             console.log(`Item da lista do cliente: ${invoice}.`)
 
-            itemPesquisado.push(array[i]);
-            array[i].estoque--
+            if(array[i].estoque == invoice[0].qtd) {
+                itemPesquisado.push(array[i]);
+                array[i].estoque = array[i].estoque - invoice[0].qtd
+            } else {
+                console.log(`A quantidade no estoque não atende o item: ${invoice[0].nome}. Temos disponibilidade em ${array[i].estoque} ao invés de ${invoice[0].qtd}`)
+            }
+
             
         } 
     }
+
+    if (itemPesquisado === [""]) {
+        console.log("Produto não encontrado.")
+    }
+        
     return itemPesquisado;
 }
 
+let customerList = [
+    {
+        nome: "Granola Crocante 500g",
+        qtd: 1
+    }
+]
 
 
+carrinhoCompra.push(customerInvoice(produto, customerList))
+console.log("Carrinho de compras:")
+console.log(`Item: ${carrinhoCompra[0].nome}`)
+console.log(`Quantidade: ${carrinhoCompra[0].qtd}`)
 
-carrinhoCompra.push(customerInvoice(produto, "Granola Crocante 500gr"))
-console.log('Carrinho de compras: ', carrinhoCompra)
-console.log(carrinhoCompra)
