@@ -22,6 +22,9 @@ function customerInvoice(array, invoice) {
         let customerItemName = invoice.name
         let customerItemQtd = invoice.qtd
 
+        console.log(customerItemName)
+        console.log(customerItemQtd)
+
         console.log(`Item atual no looping: ${array[i].nome}.`)
         if (array[i].nome == customerItemName) {
             console.log(`Item com nome iguao o da lista: ${array[i].nome}.`)
