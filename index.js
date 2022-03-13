@@ -2,12 +2,20 @@ const produto = require('./produtos')
 const carrinhoCompra = []
 
 
-function addProdutoNome() {
+//------------------Adiciona-Mercadoria-no-Estoque--------------------
+
+function addProduto() {
     
     carrinhoCompra.push(carrinhoCompra)
 
     return carrinhoCompra
 }
+
+
+
+
+
+
 
 
 function customerInvoice(array, invoice) {
@@ -16,11 +24,7 @@ function customerInvoice(array, invoice) {
 
     for (let i = 0; i < array.length; i++) {
 
-        console.log(`Item atual no looping: ${array[i].nome}.`)
-
         if (array[i].nome == invoice[0].nome) {
-            console.log(`Match: ${array[i].nome}.`)
-            console.log(`Item da lista do cliente: ${invoice}.`)
 
             if(array[i].estoque == invoice[0].qtd) {
                 itemPesquisado.push(array[i]);
@@ -33,12 +37,11 @@ function customerInvoice(array, invoice) {
         } 
     }
 
-    if (itemPesquisado === [""]) {
-        console.log("Produto não encontrado.")
-    }
         
     return itemPesquisado;
 }
+
+//-----------------Lista-de-Compras-do-Cliente---------------------------------
 
 let customerList = [
     {
@@ -47,6 +50,7 @@ let customerList = [
     }
 ]
 
+//----------------Resultado-da-Comparação-de-Compras---------------------------
 
 carrinhoCompra.push(customerInvoice(produto, customerList))
 console.log("Carrinho de compras:")
