@@ -13,7 +13,7 @@ I start this project with some functionality goals.
 
 In the way of building it, I found knowledge gaps to do everything I want.
 
-This is just the beginning of something huge. Today he is only one percent of where I want to be. I still have a lot to do to achieve what I want.
+This is just the beginning of something huge. Today it is only one percent of where I want to be. I still have a lot to do to achieve what I want.
 
 
 This System will evolve to support real stores, helping day by day to make the job easier.
@@ -28,7 +28,7 @@ Here we have files to especify:
 - `produtos.js`: Declare every item in the store.
 - `customerList.js`: Customer shopping list.
 
-The files above are called in index.js. He process the information and:
+The files above are called in index.js. It processis the information and:
 
 - `Functionality 1`: add products in the storage.
 - `Functionality 2`: compare customer shopping list with the storage.
