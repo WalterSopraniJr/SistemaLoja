@@ -35,6 +35,6 @@ The files above are called in index.js. He process the information and:
 
 
 
-## Autor
+## Author
 
 [<img src="https://avatars.githubusercontent.com/u/91127730?v=4" width=115><br><sub>Walter Soprani Júnior</sub>](https://github.com/WalterSopraniJr) 
