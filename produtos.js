@@ -82,7 +82,7 @@ const produto = [
         codigo: "0014",
         precoCompra: 4.50,
         precoVenda: 12.00,
-        estoque: 0
+        estoque: 1
     }, {
         nome: "Granola Crocante 1Kg",
         codigo: "0015",
